@@ -32,7 +32,7 @@ let noBallX = 0;
 let noBallY = 0;
 let lastNoBallMoveAt = 0;
 let homeBgm;
-let isMusicOn = false;
+let isMusicOn = true;
 
 const HEART_MASK = [
   '0011001100',
@@ -249,6 +249,7 @@ function setupHomeBgm() {
   homeBgm.volume = 0.32;
   homeBgm.preload = 'auto';
   updateMusicToggleLabel();
+  homeBgm.play().catch(() => {});
 
   musicToggle.addEventListener('click', async () => {
     if (!homeBgm) {
