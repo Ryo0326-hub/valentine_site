@@ -1,3 +1,3 @@
 # Valentine Sauce
 
-This is my first Valentine website I made for Humay.
+My first version of a valentine site I made for Humay (Unserious content). 
